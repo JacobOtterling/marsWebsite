@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto Mono;
+    color: #272A34;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.main-header {
+    background-image: url("Images/iStock-1053794310-2048x1152.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+    width: 100%;
+    min-width: 600px;
+    height: auto;
+    min-height: 400px;
+}
+
+
+.side-bar-btn {
+    color: #546590;
+    padding: 5px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.side-bar-btn:hover {
+    background-color: #252D40
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content */
+main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.planet-name-large {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin:0;
+    padding-top: 5px;
+}
+
+.planet-name {
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.website-description {
+    margin-bottom: 5em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.main-footer {
+    background-color: #671308;
+    color: yellow;
+    padding: .25em 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.nasa-logo {
+    width: 95px;
+    height: 80px;
+}
+
+.wikipedia-logo {
+    width: 100px;
+    height:75px;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav img:hover {
+    background-color: #461308
+}
+
+
+main {
+    text-align: center;
+    margin: auto;
+    padding:0;
+}
+
+#date-picker {
+    box-sizing: border-box;
+    width: 9rem;
+    padding: 0.02rem;
+    border-radius: 3px;
+}
+
+
+.btn-primary {
+    color: white;
+    background-color: #671308;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-img {
+    margin-top: 1em;
+}
+
+.btn-img:hover {
+    background-color: #E0383B
+}
+
+.title-section {
+    font-size: 0.8em;
+}
+
+.copyright-img {
+    margin-bottom: 25px;
+}
+
+.media-section {
+    max-width: 100%;
+    height: auto;
+}
+
+.description-div {
+    text-align: center;
+    margin: .5em 8em 4em 8em;
+    letter-spacing: 0px;
+}
+
+.guideline {
+    margin: auto;
+    width: 75%;
+    line-height: 1.6em;
+}
+
+.container-weather {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inner-container {
+    justify-content: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    display: flex;
+}
+
+.background-img-weather {
+    background-image: url('Images/mars-rover-elderfox-docu-tour-banner.jpg');
+    background-size: cover;
+    width: 95%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+
+.description {
+    margin: 2em 0 0 2em;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    color: #F7530C
+}
+
+.min-stats {
+    text-align: left;
+    margin: 5em 0 0 2em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.display-min-temp {
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.max-temp {
+    text-align: left;
+    margin: 1em 0 0 2em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.display-max-temp {
+    font-weight: bold;
+    color: #F7530C;
+}
+
+
+.mars-date {
+    margin-bottom: 10em;
+}
+
+.pressure {
+    text-align: left;
+    margin: 1em 0 0 2em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.display-pressure {
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.sunrise {
+    text-align: left;
+    margin: 1em 0 0 2em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.display-sunrise {
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.sunset {
+    text-align: left;
+    margin: 1em 0 0 2em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.display-sunset {
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.earth-date {
+    text-align: left;
+    margin: 1em 0 0 2em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.display-terrestial-date {
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.mars-date {
+    text-align: left;
+    margin: 1em 0 2.5em 2em;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.display-sol-date {
+    font-weight: bold;
+    color: #F7530C;
+}
+
+.datepicker {
+    margin: .5em 0 .5em 0;
+    padding: .2em;
+}
+
+.rover-picker {
+    margin: 1em 0 1.7em 0;
+    padding: .2em;
+}
+
+.rover-picker-label {
+    margin: .7em 0 .2em 0;
+    padding: 0;
+}
+
+.paragraph {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin: 1em .5em .4em 2em;
+    font-size: 1em;
+}
+
+.missionCaption {
+    margin: 0 0 .3em 6em;
+    font-size: .8em;
+    color: #F7530C;
+}
+
+.ignitionFailure {
+    font-size: .8em;
+    color: #F7530C;
+    margin-left: 10.5em;
+    margin-top: .1em;
+}

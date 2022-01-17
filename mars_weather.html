@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name='MARS WEATHER REPORT' content="MARS WEATHER REPORT" charset="UTF-8">
+    <title>MARS | WEATHER REPORT</title>
+    <link rel="stylesheet" href="styles_mars.css" />
+    <script src="mars_weather.js" async></script>
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">About</a>
+        <a href="apod.html">ASTRONOMICAL PICTURE OF THE DAY</a>
+        <a href="mars_weather.html">MARS WEATHER REPORT</a>
+        <a href="Rover.html">MARS ROVER PHOTOS</a>
+    </div>
+    <header class="main-header header">
+        <span class="side-bar-btn" onclick="openNav()">&#9776;</span>
+    </header>
+    <div id="main">
+        <main>
+            <header>
+                <h1> Weather on Mars </h1>
+                <p class='guideline'>
+                    Mars Curiosity Rover landed on Mars on 2012-08-07 and has since then 
+                    provided us with a steady weather report from
+                    'The Red Planet'. Here is the most recent one.
+            </header>
+                <div class='container-weather'>
+                    <div class='inner-container'>
+                        <div class='background-img-weather stats' > <!-- add img -->
+                            <p class='description'></p>
+                            <h2 class='min-stats'>Min Temperature: <span class='display-min-temp'></span></h2>
+                            <h2 class='max-temp'>Max Temperature: <span class='display-max-temp'></span></h2>
+                            <h2 class='pressure'>Pressure: <span class='display-pressure'></span><h2/>
+                            <h2 class='sunrise'>Sunrise: <span class='display-sunrise'></span></h2>
+                            <h2 class='sunrise'>Sunset:<span class='display-sunset'></span></h2>
+                            </p>
+                            <p class='earth-date'>Terrestial Date: <span class='display-terrestial-date'></span></p>
+                            <p class='mars-date'>Sol Date: <span class='display-sol-date'></span></p>
+                        </div>
+                    </div>
+                </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name='MARS ROVER PHOTOS' content="MARS ROVER PHOTOS" charset="UTF-8">
+    <title>MARS | MARS ROVER PHOTOS</title>
+    <link rel="stylesheet" href="styles_mars.css" />
+    <script src="rover.js" async='true'></script>
+    <script src="script.js" async='true'></script>
+</head>
+<body>
+   <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">About</a>
+        <a href="apod.html">ASTRONOMICAL PICTURE OF THE DAY</a>
+        <a href="mars_weather.html">MARS WEATHER REPORT</a>
+        <a href="Rover.html">MARS ROVER PHOTOS</a>
+    </div>
+    <header class="main-header header">
+        <span class="side-bar-btn" onclick="openNav()">&#9776;</span>
+    </header>
+    <main class="main">
+        <p class="paragraph">
+            Here you can explore photos taken by our three different Rovers on Mars.
+            Choose a Rover and a date and wonder at the amazing pictures from Mars surface!
+        </p>
+        <form class="datepicker">
+            <label for="datepicker">Pick a date:
+            <input id="datepicker" value='' type="date" min="1995-06-16" max=""> <!-- need to format this nicer -->
+            </label>
+        </form>
+        <form class='rover-picker'>
+            <label for="rover">Choose a Rover:</label>
+            <select id="Rover" name="Rover">
+                <option value="Curiosity">Curiosity</option>
+                <option value="Spirit">Spirit</option>
+                <option value="Oppurtunity">Opportunity</option>
+            </select>
+        </form> 
+        <button class="btn btn-primary btn-img">Find Image</button>
+        <section class="description">
+            <p class="missionCaption" ></p>
+            <p class="ignitionFailure"></p>
+        </section>
+           <div>
+               <section id="media-section" class='media-section'>
+           </div>
+            </section>
+           <div class="description-div">
+            <p class='description-img'></p>
+           </div>
+            <script src="rover.js"></script>
+
+</body>
+</html>

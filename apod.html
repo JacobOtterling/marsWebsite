@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name='APOD' content="ASTRONOMICAL PICTURE OF THE DAY" charset="UTF-8">
+    <title>ASTRONOMICAL PICTURE OF THE DAY</title>
+    <link rel="stylesheet" href="styles_mars.css" />
+    <script src="script.js"></script>
+    <script src="apod.js" async="true"></script>
+</head>
+<body>
+   <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="home.html">About</a>
+        <a href="apod.html">ASTRONOMICAL PICTURE OF THE DAY</a>
+        <a href="mars_weather.html">MARS WEATHER REPORT</a>
+        <a href="Rover.html">MARS ROVER PHOTOS</a>
+    </div>
+    <header>
+        <span class="side-bar-btn" onclick="openNav()">&#9776;</span>
+    </header>
+    <div id="main">
+         <main>
+             <header>
+             <h1>Nasa's Astronomical Picture of the Day</h1>
+
+             <form>
+             <label class='datepicker' for="datepicker">Pick a date:
+             <input id="datepicker" value='' type="date" min="1995-06-16" max=""> <!-- need to format this nicer -->
+             </label>
+             </form>
+
+             <hr style="color: white; width: 60vw;">
+                 <button class="btn btn-primary btn-img">Find Image</button>
+
+             </header>
+
+             <section class="title-section">
+             <h2 class="title-img" ></h2>
+            <p class='copyright-img'></p>
+             </section>
+            <div>
+                <section id="media-section" class='media-section'>
+            </div>
+             </section>
+
+            <div class="description-div">
+             <p class='description-img'></p>
+            </div>
+             <script src="apod.js"></script>
+         </main>
+    </div> <!-- add footer here, need to fix so it goes to bottom -->
+</body>
+</html>
